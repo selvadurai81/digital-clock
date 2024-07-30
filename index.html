@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer-division {
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            /* column-gap: 100px; */
+            /* flex-flow: wrap; */
+            justify-content: space-evenly;
+        }
+        .inner-division {
+            /* border: 5px solid black; */
+            width: 200px;
+            height: 150px;
+            text-align: center;
+            border-radius: 100px;
+            margin-top: 150px;
+            background-color: rgb(79, 243, 188);
+            /* border-color: red; */
+            color: black;
+        }
+        h1 {
+            display: none;
+        }
+        #clock {
+            display: block;
+            font-size: 60px;
+            text-align: center;
+            font-family: sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h4>Select Format</h4>
+    <select name="" id="drop">
+        <option value="none">None</option>
+        <option value="12">12H</option>
+        <option value="24">24H</option>
+    </select>
+    <span id="clock">DIGITAL CLOCK</span>
+    <div class="outer-division">
+        <div class="inner-division">
+            <h2>Hour</h2>
+            <h1 id="h1">sec</h1>
+        </div>
+        <div class="inner-division">
+            <h2>Minute</h2>
+            <h1 id="h2">min</h1>
+        </div>
+        <div class="inner-division">
+            <h2>Second</h2>
+            <h1 id="h3">sec</h1>
+        </div>
+        <div class="inner-division">
+            <h2>AM/PM</h2>
+            <h1 id="h4">ampm</h1>
+        </div>
+        <div class="inner-division">
+            <h2>Month</h2>
+            <h1 id="h5">month</h1>
+        </div>
+        <div class="inner-division">
+            <h2>Year</h2>
+            <h1 id="h6">year</h1>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
